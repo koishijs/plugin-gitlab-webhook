@@ -45,7 +45,9 @@ export function apply (ctx: Context, options: Record<string, number[]> = {}) {
   const webhook = webhooks[key]
 
   if (!servers[config.port]) {
-    const server = servers[config.port] = createServer(webhooks[key])
+    const server = servers[config.port] = createServer((req, res) => {
+      webhook(req, res, () => {})
+    })
     onStart(() => server.listen(config.port))
     onStop(() => server.close())
   }
