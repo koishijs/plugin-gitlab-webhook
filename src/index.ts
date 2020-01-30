@@ -1,6 +1,6 @@
 import { Context, onStart, onStop } from 'koishi-core'
 import { Server, createServer } from 'http'
-import * as WebhookHandler from 'node-gitlab-webhook'
+import WebhookHandler from 'node-gitlab-webhook'
 import * as Interfaces from 'node-gitlab-webhook/interfaces'
 
 declare module 'koishi-core/dist/app' {
