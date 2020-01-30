@@ -1,0 +1,54 @@
+{
+  "name": "plugin-gitlab-webhook",
+  "version": "1.0.0",
+  "description": "GitLab webhook plugin for Koishi",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint src --ext .ts",
+    "prepack": "tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koishijs/plugin-gitlab-webhook.git"
+  },
+  "author": "NN708 <nn708@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koishijs/plugin-gitlab-webhook/issues"
+  },
+  "homepage": "https://github.com/koishijs/plugin-gitlab-webhook#readme",
+  "keywords": [
+    "bot",
+    "qqbot",
+    "cqhttp",
+    "coolq",
+    "chatbot",
+    "koishi",
+    "plugin",
+    "gitlab",
+    "webhook"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "koishi-test-utils": "^2.1.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "koishi-core": "^1.6.0",
+    "node-gitlab-webhook": "^1.0.6"
+  }
+}
