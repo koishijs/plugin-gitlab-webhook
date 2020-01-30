@@ -1,5 +1,5 @@
 {
-  "name": "plugin-gitlab-webhook",
+  "name": "koishi-plugin-gitlab-webhook",
   "version": "1.0.0",
   "description": "GitLab webhook plugin for Koishi",
   "main": "dist/index.js",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/koishijs/plugin-gitlab-webhook/issues"
   },
-  "homepage": "https://github.com/koishijs/plugin-gitlab-webhook#readme",
+  "homepage": "https://koishi.js.org/plugins/other/gitlab-webhook",
   "keywords": [
     "bot",
     "qqbot",
